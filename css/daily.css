@@ -1,0 +1,152 @@
+h1{
+    color: #0065c3;
+    text-align: center;
+}
+
+.tabs {
+    flex-direction: column;
+    max-width: 100%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .tabs__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0px 4px 5px rgba(0,0,0,.1);
+    border-radius: 30px;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+  }
+  
+  .tabs__toggle {
+    margin: 0 5px;
+    padding: 7px 25px;
+    background: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+  }
+  
+  .tabs__name {
+    font-weight: 500;
+    font-size: 14px;
+    color: #484848;
+  }
+  
+  .tabs__body {
+    background: #fff;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 30px;
+    position: relative;
+    width: 70%;
+  }
+  
+  .tabs__title {
+    font-weight: 600;
+    font-size: 24px;
+    color: #484848;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .tabs__text {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #484848;
+  }
+  
+  .tabs__content {
+    display: none;
+  }
+  
+  .tabs__toggle.is-active {
+    background: #e7eef8;
+  }
+  
+  .tabs__toggle.is-active .tabs__name {
+    color: #2a61d8;
+  }
+  
+  .tabs__content.is-active {
+    display: block;
+  }
+
+  .mien{
+    display: grid;
+    grid-template-columns: repeat(2,0.5fr);
+    grid-gap: 20px;
+  }
+
+  .mien .mien__item{
+      padding-bottom:10px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      flex-direction: column;
+      /* border: 1px solid black;
+      border-radius: 10px; */
+  }
+
+  .mien .mien__item .image{
+      width: 90%;
+      margin: 0 auto;
+  }
+
+  .mien .mien__item .image img{
+    width: 100%;
+    height: auto;
+  }
+
+  .mien .mien__item .info{
+      width: 100%;
+      padding-left: 10px;
+  }
+
+  .mien .mien__item .info h2{
+      color: black;
+      text-align: left;
+  }
+
+  .mien .mien__item .info p{
+      color: black;
+      font-size: 20px;
+      /* font-weight: 900; */
+      text-align: left;
+  }
+
+  @media screen and (min-width: 320px) {
+    .mien{
+      grid-template-columns: repeat(1,1fr);
+    }
+    .mien .mien__item .info h2{
+      color: black;
+      text-align: left;
+      font-size: 17px;
+  }
+    .mien .mien__item .info p{
+      color: black;
+      font-size: 15px;
+      /* font-weight: 900; */
+      text-align: left;
+  }
+  }
+  @media screen and (min-width: 600px) {
+    .mien{
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .mien{
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+
+  
+  

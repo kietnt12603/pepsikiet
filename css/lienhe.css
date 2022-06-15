@@ -1,0 +1,213 @@
+.contact {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.contact h1 {
+    text-align: center;
+    margin: 10px;
+    font-size: 35px;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.contact .contact-content {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 40px;
+}
+
+.contact .contact-content .left {
+    width: 100%;
+}
+
+.contact .contact-content .left h2 {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0px 0px 20px;
+    text-align: left;
+}
+
+
+input[type=text] {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #7d78d9;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+input[type=submit]:hover {
+    background-color: #493eff;
+}
+
+textarea.message {
+    border: 1px solid #d1d1d1;
+    font-size: 14px;
+    padding: 8px 15px;
+    width: 100%;
+    margin: 0 0 15px 0;
+    max-width: 100%;
+    resize: none;
+    height: 200px;
+}
+
+
+.contact .contact-content .right {
+    width: 100%;
+}
+
+.contact .contact-content .right .lienlac {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.contact .contact-content .right .lienlac h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0 15px;
+}
+
+.contact .contact-content .right .lienlac p {
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 26px;
+}
+.contact .contact-content .right .truso {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+
+.contact .contact-content .right .truso h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0 15px;
+}
+
+.contact .contact-content .right .truso ul{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact .contact-content .right .truso .list-style-1 li{
+    padding: 5px 0;
+    list-style-type: none;
+}
+
+.contact .contact-content .right .truso .list-style-1 li p{
+    color: #999;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.contact .contact-content .right .truso .list-style-1 li p i{
+    width: 25px;
+    height: 25px;
+    padding-top: 7px;
+    border-radius: 50%;
+    background: #47588f;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 5px;
+    line-height: 11px;
+    text-align: center;
+}
+
+strong{
+    color: black;
+}
+
+.contact .contact-content .right .giolamviec{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.contact .contact-content .right .giolamviec h3{
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0 15px;
+}
+
+.contact .contact-content .right .giolamviec ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact .contact-content .right .giolamviec ul li{
+    color: black;
+    position: relative;
+    padding: 0 0 0 12px;
+    margin: 0 0 9px 0;
+    line-height: 30px;
+}
+
+.map{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 320px) {
+    .contact .contact-content{
+        grid-template-columns: repeat(1,100%);
+    }
+    .map{
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .contact .contact-content{
+        grid-template-columns: repeat(1,100%);
+    }
+    .map{
+        height: 200px;
+    }
+}
+@media screen and (min-width: 600px) {
+    .map{
+        height: 250px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .contact .contact-content{
+        grid-template-columns: repeat(2,50%);
+    }
+    .map{
+        height: 250px;
+    }
+}
+@media screen and (min-width: 1290px) {
+    .map{
+        height: 300px;
+    }
+}

@@ -1,0 +1,161 @@
+.about{
+    width: 80%;
+    margin: 30px auto;
+    margin-bottom: 50px;
+}
+
+.about h1{
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.about .about-content{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    grid-gap: 60px;
+}
+
+.about .about-content .left{
+    width: 100%;
+}
+.about .about-content .left figure img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.about .about-content .right{
+    width: 100%;
+}
+
+.about .about-content .right .Message{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.about .about-content .right .Message h2{
+    color: black;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.about .about-content .right .Message p{
+    color: black;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.about .about-content .right .Message img{
+    padding-bottom: 30px;
+}
+
+.about .about-content .right .Message h3{
+    color: black;
+    font-weight: 600;
+}
+
+.lanhdao{
+    width: 80%;
+    margin: 30px auto;
+    margin-bottom: 50px;
+}
+.lanhdao h2{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+.lanhdao .lanhdao-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    width: 100%;
+}
+
+.lanhdao .lanhdao-content .lanhdao-item figure img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.lanhdao .lanhdao-content .lanhdao-item .info h3{
+    padding-top: 10px;
+    padding-left: 10px;
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.lanhdao .lanhdao-content .lanhdao-item .info span{
+    color: black;
+    font-size: 12px;
+   padding: 10px;
+}
+
+.lanhdao .lanhdao-content .lanhdao-item .info p{
+    color: black;
+    padding-left:10px ;
+    text-align: left;
+    padding-top: 10px;
+}
+
+@media screen and (min-width: 320px) {
+    .about .about-content{
+        grid-template-columns: repeat(1,100%);
+        grid-gap: 5px;
+    }
+
+    .about .about-content .right .Message {
+        margin-top:20px;
+    }
+
+    .Message h3{
+        font-size: 15px;
+    }
+
+    .lanhdao .lanhdao-content{
+        grid-template-columns: repeat(1,100%);
+    }
+
+}
+
+@media screen and (min-width:600px){
+    .lanhdao .lanhdao-content{
+        grid-template-columns: repeat(2,50%);
+    }
+}
+
+@media screen and (min-width:1024px){
+    .about .about-content{
+        grid-template-columns: 30% 60%;
+        grid-gap: 30px;
+    }
+
+    .about .about-content .right .Message{
+        margin-top:0px ;
+    }
+
+    .lanhdao .lanhdao-content{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (min-width:1396px){
+    .about .about-content{
+        grid-template-columns: 30% 60%;
+        grid-gap: 30px;
+    }
+
+    .about .about-content .right .Message{
+        margin-top:50px ;
+    }
+
+    .lanhdao .lanhdao-content{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
